@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Дані сайту -->
+  <meta charset="utf-8">
+  <title>єОсвіта</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- Іконка сайту -->
+  <link href="img/favicon.svg" rel="icon">
+
+  <!-- Шрифти із Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Іконки -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Ефект завантаження сторінки -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+      <span class="sr-only">Завантаження...</span>
+    </div>
+  </div>
+
+  <!-- Хедер -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+      <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>єОсвіта</h2>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto p-4 p-lg-0">
+        <a href="#" class="nav-item nav-link active">Головна</a>
+        <a href="#services" class="nav-item nav-link">Послуги</a>
+        <a href="#about-us" class="nav-item nav-link">Про нас</a>
+        <div class="nav-item dropdown">
+          <a id="dropdown-text" href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Навчання</a>
+          <div class="dropdown-menu fade-down m-0">
+            <a href="#categories" class="nav-item nav-link">Категорії курсів</a>
+            <a href="#teachers" class="nav-item nav-link">Викладачі</a>
+          </div>
+        </div>
+      </div>
+      <a id="nav-item" href="#contacts" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Зв'яжіться з нами<i
+          class="fa fa-arrow-right ms-3"></i></a>
+    </div>
+  </nav>
+
+  <!-- Загальна інформація -->
+  <div class="container-fluid p-0 mb-5">
+    <div class="owl-carousel header-carousel position-relative">
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+          style="background: rgba(24, 29, 56, .7);">
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-sm-10 col-lg-8">
+                <h1 class="display-3 text-white animated slideInDown">Висока якість освітніх курсів</h1>
+                <p class="fs-5 text-white mb-4 pb-2">Наші курси розроблені експертами у відповідних галузях, що
+                  гарантує вам доступ до актуальної та практичної інформації.</p>
+                <a id="read-more" href="#about-us"
+                  class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Читати
+                  далі</a>
+                <a id="join-now" href="#categories"
+                  class="btn btn-light py-md-3 px-md-5 animated slideInRight">Переглянути
+                  курси</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+          style="background: rgba(24, 29, 56, .7);">
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-sm-10 col-lg-8">
+                <h1 class="display-3 text-white animated slideInDown">Навчайся де і як тобі зручно</h1>
+                <p class="fs-5 text-white mb-4 pb-2">Розширюй свої знання, навчаючись в будь-якому місці та в зручний
+                  для тебе час! Гнучко, швидко та просто.</p>
+                <a id="read-more" href="#about-us"
+                  class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Читати
+                  далі</a>
+                <a id="join-now" href="#categories"
+                  class="btn btn-light py-md-3 px-md-5 animated slideInRight">Переглянути
+                  курси</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="owl-carousel-item position-relative">
+        <img class="img-fluid" src="img/carousel-3.jpg" alt="">
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+          style="background: rgba(24, 29, 56, .7);">
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-sm-10 col-lg-8">
+                <h1 class="display-3 text-white animated slideInDown">Велика кількість навчальних курсів</h1>
+                <p class="fs-5 text-white mb-4 pb-2">У тебе є можливість самостійно вирішити, що ти будеш вчити. Наш
+                  сайт налічує понад 250 актуальних курсів.</p>
+                <a id="read-more" href="#about-us"
+                  class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Читати
+                  далі</a>
+                <a id="join-now" href="#categories"
+                  class="btn btn-light py-md-3 px-md-5 animated slideInRight">Переглянути
+                  курси</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Про процес навчання -->
+  <div id="services" class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="service-item text-center pt-3">
+            <div class="p-4">
+              <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+              <h5 class="mb-3">Кваліфіковані викладачі</h5>
+              <p>Всі наші викладачі проходять ретельну перевірку своїх здібностей.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="service-item text-center pt-3">
+            <div class="p-4">
+              <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+              <h5 class="mb-3">Наявність онлайн-заняття</h5>
+              <p>Завдяки онлайн-режиму ви можете навчатися з будь-якої точки світу в будь-який зручний момент.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="service-item text-center pt-3">
+            <div class="p-4">
+              <i class="fa fa-3x fa-home text-primary mb-4"></i>
+              <h5 class="mb-3">Багато домашніх проєктів</h5>
+              <p>Всі курси на нашому вебсайті мають цікаві домашні проєкти, які перевіряються кураторами.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+          <div class="service-item text-center pt-3">
+            <div class="p-4">
+              <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+              <h5 class="mb-3">Додаткова література</h5>
+              <p>Окрім матеріалу від викладачів ви також отримаєте літературу для власного ознайомлення.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Про нас -->
+  <div id="about-us" class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+          <div class="position-relative h-100">
+            <img class="img-fluid position-absolute w-100 h-100" src="img/about.jpg" alt="" style="object-fit: cover;">
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+          <h6 class="section-title bg-white text-start text-primary pe-3">Про нас</h6>
+          <h1 class="mb-4">Вітаємо на єОсвіта</h1>
+          <p class="mb-4">єОсвіта — це платформа, де ви можете отримати сучасні знання у багатьох галузях. Наші курси
+            пов'язані переважно із IT-спеціальностями, але є і багато інших курсів.</p>
+          <p class="mb-4">Ми працюємо з висококваліфікованими викладачами з авторськими програмами та методиками.
+            єОсвіта пропонує професійні та практичні курси.</p>
+          <div class="row gy-2 gx-4 mb-4">
+            <div class="col-sm-6">
+              <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Кваліфіковані викладачі</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Наявність онлайн-заняття</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Багато домашніх проєктів</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Додаткова література</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Авторські програми</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Наявність сертифікації</p>
+            </div>
+          </div>
+          <a class="btn btn-primary py-3 px-5 mt-2" href="#categories">Читати далі</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Категорії курсів -->
+  <div id="categories" class="container-xxl py-5 category">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title bg-white text-center text-primary px-3">Категорії</h6>
+        <h1 class="mb-5">Категорії курсів</h1>
+      </div>
+      <div class="row g-3">
+        <div class="col-lg-7 col-md-6">
+          <div class="row g-3">
+            <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+              <a class="position-relative d-block overflow-hidden">
+                <img class="img-fluid" src="img/cat-1.jpg" alt="">
+                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                  <h5 class="m-0">Веб-дизайн</h5>
+                  <small class="text-primary">32 курси</small>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+              <a class="position-relative d-block overflow-hidden">
+                <img class="img-fluid" src="img/cat-2.jpg" alt="">
+                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                  <h5 class="m-0">Графічний дизайн</h5>
+                  <small class="text-primary">17 курсів</small>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+              <a class="position-relative d-block overflow-hidden">
+                <img class="img-fluid" src="img/cat-3.jpg" alt="">
+                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                  <h5 class="m-0">Монтаж відео</h5>
+                  <small class="text-primary">29 курсів</small>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+          <a class="position-relative d-block h-100 overflow-hidden">
+            <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">
+            <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
+              <h5 class="m-0">Онлайн-маркетинг</h5>
+              <small class="text-primary">58 курсів</small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Популярні курси -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title bg-white text-center text-primary px-3">Курси</h6>
+        <h1 class="mb-5">Популярні курси</h1>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="course-item bg-light">
+            <div class="position-relative overflow-hidden">
+              <img class="img-fluid" src="img/course-1.jpg" alt="">
+              <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                  style="border-radius: 30px 0 0 30px;">Читати далі</a>
+                <a href="#contacts" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                  style="border-radius: 0 30px 30px 0;">Записатися</a>
+              </div>
+            </div>
+            <div class="text-center p-4 pb-0">
+              <h3 class="mb-0">15 600 грн</h3>
+              <div class="mb-3">
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small>(179)</small>
+              </div>
+              <h5 class="mb-4">Курс веб-дизайну та розробки для початківців</h5>
+            </div>
+            <div class="d-flex border-top">
+              <small class="flex-fill text-center border-end py-2"><i
+                  class="fa fa-user-tie text-primary me-2"></i>Максим Іванов</small>
+              <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>1г.
+                49хв.</small>
+              <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>130 місць</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="course-item bg-light">
+            <div class="position-relative overflow-hidden">
+              <img class="img-fluid" src="img/course-2.jpg" alt="">
+              <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                  style="border-radius: 30px 0 0 30px;">Читати далі</a>
+                <a href="#contacts" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                  style="border-radius: 0 30px 30px 0;">Записатися</a>
+              </div>
+            </div>
+            <div class="text-center p-4 pb-0">
+              <h3 class="mb-0">23 100 грн</h3>
+              <div class="mb-3">
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small>(321)</small>
+              </div>
+              <h5 class="mb-4">Таргетована реклама в Facebook</h5>
+            </div>
+            <div class="d-flex border-top">
+              <small class="flex-fill text-center border-end py-2"><i
+                  class="fa fa-user-tie text-primary me-2"></i>Анастасія Петренко</small>
+              <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>5г.
+                16хв.</small>
+              <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>80 місць</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="course-item bg-light">
+            <div class="position-relative overflow-hidden">
+              <img class="img-fluid" src="img/course-3.jpg" alt="">
+              <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                  style="border-radius: 30px 0 0 30px;">Читати далі</a>
+                <a href="#contacts" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                  style="border-radius: 0 30px 30px 0;">Записатися</a>
+              </div>
+            </div>
+            <div class="text-center p-4 pb-0">
+              <h3 class="mb-0">18 000 грн</h3>
+              <div class="mb-3">
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small class="fa fa-star text-primary"></small>
+                <small>(321)</small>
+              </div>
+              <h5 class="mb-4">Маркетингові стратегії в Instagram та TikTok</h5>
+            </div>
+            <div class="d-flex border-top">
+              <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Павло
+                Шевченко</small>
+              <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>8г.
+                49хв.</small>
+              <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>50 місць</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Викладачі-куратори -->
+  <div id="teachers" class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title bg-white text-center text-primary px-3">Викладачі</h6>
+        <h1 class="mb-5">Викладачі-куратори</h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item bg-light">
+            <div class="overflow-hidden">
+              <img class="img-fluid" src="img/team-1.jpg" alt="">
+            </div>
+            <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+              <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="text-center p-4">
+              <h5 class="mb-0">Максим Іванов</h5>
+              <small>Веб-дизайнер</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="team-item bg-light">
+            <div class="overflow-hidden">
+              <img class="img-fluid" src="img/team-2.jpg" alt="">
+            </div>
+            <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+              <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="text-center p-4">
+              <h5 class="mb-0">Анастасія Петренко</h5>
+              <small>Таргетолог</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="team-item bg-light">
+            <div class="overflow-hidden">
+              <img class="img-fluid" src="img/team-3.jpg" alt="">
+            </div>
+            <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+              <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="text-center p-4">
+              <h5 class="mb-0">Павло Шевченко</h5>
+              <small>Розробник стратегій</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+          <div class="team-item bg-light">
+            <div class="overflow-hidden">
+              <img class="img-fluid" src="img/team-4.jpg" alt="">
+            </div>
+            <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+              <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="text-center p-4">
+              <h5 class="mb-0">Юлія Кравченко</h5>
+              <small>Ілюстраттор</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Відгуки -->
+  <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+      <div class="text-center">
+        <h6 class="section-title bg-white text-center text-primary px-3">Відгуки</h6>
+        <h1 class="mb-5">Відгуки наших студентів</h1>
+      </div>
+      <div class="owl-carousel testimonial-carousel position-relative">
+        <div class="testimonial-item text-center">
+          <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg"
+            style="width: 80px; height: 80px;">
+          <h5 class="mb-0">Ірина Соловйова</h5>
+          <p>Маркетолог</p>
+          <div class="testimonial-text bg-light text-center p-4">
+            <p class="mb-0">Курс з маркетингу був дуже корисним. Отримала багато цінної інформації.</p>
+          </div>
+        </div>
+        <div class="testimonial-item text-center">
+          <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg"
+            style="width: 80px; height: 80px;">
+          <h5 class="mb-0">Олександр Соколов</h5>
+          <p>Копірайтер</p>
+          <div class="testimonial-text bg-light text-center p-4">
+            <p class="mb-0">Курс з копірайтингу надав ефективні техніки написання продаючих текстів. Дуже задоволений
+              результатом.</p>
+          </div>
+        </div>
+        <div class="testimonial-item text-center">
+          <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg"
+            style="width: 80px; height: 80px;">
+          <h5 class="mb-0">Сергій Кравченко</h5>
+          <p>Маркетолог</p>
+          <div class="testimonial-text bg-light text-center p-4">
+            <p class="mb-0">Курс з маркетингу дуже корисним. Отримав багато цінної інформації, яку зараз успішно
+              застосовую.</p>
+          </div>
+        </div>
+        <div class="testimonial-item text-center">
+          <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg"
+            style="width: 80px; height: 80px;">
+          <h5 class="mb-0">Ольга Лебедєва</h5>
+          <p>Розробник стратегій</p>
+          <div class="testimonial-text bg-light text-center p-4">
+            <p class="mb-0">Онлайн-курс з соціальних медіа, дав мені багато корисних порад для просування
+              свого бізнесу в соціальних мережах.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Контакти -->
+  <div id="contacts" class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title bg-white text-center text-primary px-3">Зв'яжіться з нами</h6>
+        <h1 class="mb-5">Контакти для будь-яких питань</h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <h5>Будьте на зв'язку</h5>
+          <p class="mb-4">Ми надамо відповідь на ваше питання протягом 2 годин з моменту звернення.</p>
+          <div class="d-flex align-items-center mb-3">
+            <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+              style="width: 50px; height: 50px;">
+              <i class="fa fa-map-marker-alt text-white"></i>
+            </div>
+            <div class="ms-3">
+              <h5 class="text-primary">Штаб-квартира</h5>
+              <p class="mb-0">м. Харків, пр. Науки, 9-А</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+              style="width: 50px; height: 50px;">
+              <i class="fa fa-phone-alt text-white"></i>
+            </div>
+            <div class="ms-3">
+              <h5 class="text-primary">Телефон</h5>
+              <p class="mb-0">+38 (057) 702-03-04</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+              style="width: 50px; height: 50px;">
+              <i class="fa fa-envelope-open text-white"></i>
+            </div>
+            <div class="ms-3">
+              <h5 class="text-primary">Email</h5>
+              <p class="mb-0">post@hneu.edu.ua</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <iframe class="position-relative rounded w-100 h-100"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10255.448175456622!2d36.224354!3d50.0139409!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a12385d28285%3A0x98cd37a8ae4047b4!2sKharkiv%20National%20University%20of%20Economics!5e0!3m2!1sen!2sua!4v1684951022888!5m2!1sen!2sua%22%20width=%22600%22%20height=%22450%22%20style=%22border:0;%22%20allowfullscreen=%22%22%20loading=%22lazy%22%20referrerpolicy=%22no-referrer-when-downgrade%22"
+            frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+        <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="name" placeholder="Your Name">
+                  <label for="name">Ім'я</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="email" placeholder="Your Email">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="subject" placeholder="Subject">
+                  <label for="subject">Тема</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a message here" id="message"
+                    style="height: 150px"></textarea>
+                  <label for="message">Повідомлення</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary w-100 py-3" type="submit">Надіслати повідомлення</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Футер -->
+  <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-3">Посилання</h4>
+          <a class="btn btn-link" href="#">Головна</a>
+          <a class="btn btn-link" href="#services">Послуги</a>
+          <a class="btn btn-link" href="#about-us">Про нас</a>
+          <a class="btn btn-link" href="#categories">Категорії курсів</a>
+          <a class="btn btn-link" href="#teachers">Викладачі</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-3">Контакти</h4>
+          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>м. Харків, пр. Науки, 9-А</p>
+          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+38 (057) 702-03-04</p>
+          <p class="mb-2"><i class="fa fa-envelope me-3"></i>post@hneu.edu.ua</p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-3">Галерея</h4>
+          <div class="row g-2 pt-2">
+            <div class="col-4">
+              <img class="img-fluid bg-light p-1" src="img/carousel-1.jpg" alt="">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid bg-light p-1" src="img/carousel-2.jpg" alt="">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid bg-light p-1" src="img/carousel-3.jpg" alt="">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+            </div>
+            <div class="col-4">
+              <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-white mb-3">Розсилка</h4>
+          <p>Підпишіться на розсилку, щоб бути в курсі всіх подій.</p>
+          <div class="position-relative mx-auto" style="max-width: 400px;">
+            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Ваш email">
+            <button type="button"
+              class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Підписатися</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Кнопка нагору -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
